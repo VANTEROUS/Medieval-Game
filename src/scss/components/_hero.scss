@@ -248,7 +248,7 @@ body {
   .background {
     @include mixins.sm {
       position: absolute;
-      width: 200vw;
+      width: 100vw;
       top: 0;
       left: 0;
       overflow: hidden;
@@ -256,7 +256,7 @@ body {
   
     @include mixins.sm-md {
       position: absolute;
-      width: 200vw;
+      width: 100vw;
       top: 0;
       left: 0;
       overflow: hidden;
@@ -264,7 +264,7 @@ body {
   
     @include mixins.md {
       position: absolute;
-      width: 200vw;
+      width: 100vw;
       top: 0;
       left: 0;
       overflow: hidden;
@@ -272,7 +272,7 @@ body {
 
     @include mixins.lg {
       position: absolute;
-      width: 200vw;
+      width: 100vw;
       top: 0;
       left: 0;
       overflow: hidden;
