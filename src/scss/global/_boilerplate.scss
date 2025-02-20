@@ -1,0 +1,19 @@
+@use '../util/' as u;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body, button {
+  margin: 0;
+  font-family: "Pixelify Sans", serif;
+  color: black;
+  font-size: 16px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}

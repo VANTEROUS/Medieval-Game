@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dragon Fighting Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="background" id="gameBackground">
+      <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/588a44195922117.66168b374ece8.gif" alt="" class="background__image">
+    </div>
+
+    <div class="game" id="gameContainer">
+      <div class="game__stats">
+        <span class="game__stat">XP: <strong><span id="xpText"></span></strong></span>
+        <span class="game__stat">Health: <strong><span id="healthText"></span></strong></span>
+        <span class="game__stat">Gold: <strong><span id="goldText"></span></strong></span>
+      </div>
+
+      
+      
+      <div class="game__monster-stats">
+        <span class="game__monster-stat">Monster Name: <span class="game__monster-stat-value" id="monsterName"></span></span>
+        
+        <span class="game__monster-stat">Health: <span class="game__monster-stat-value" id="monsterHealth"></span></span> 
+      </div>
+      
+      <div class="game__image">
+        <img class="game__background-image" src="" alt="">        
+        <img class="game__monster-image" src="" alt="">        
+      </div>
+      
+      <span class="game__healthBar-text"></span>
+      <progress class="game__healthBar" value="100" max="500"></progress>
+      <div class="game__controls">
+        <button class="game__button" id="buttonOne">Go to store</button>
+        <button class="game__button" id="buttonTwo">Go to cave</button>
+        <button class="game__button" id="buttonThree">Fight dragon</button>
+      </div>
+      
+      <div class="game__equip">
+        <!-- <button class="game__equip-weapon">Stick</button> -->
+      </div>
+      <div class="game__shopList"></div>
+      
+      <div class="game__text">Welcome to Dragon Repeller. You must defeat the dragon that is preventing people from leaving the town. You are in the town square. Where do you want to go? (Use the buttons above)</div>
+
+      <div class="game__equip-item"><span class="game__equipped-item"></span></div>
+      <div class="game__inventory">Inventory: <span class="game__inventory--item"></span></div>
+      
+    </div>
+    
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

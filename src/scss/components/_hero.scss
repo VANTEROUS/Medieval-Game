@@ -1,0 +1,668 @@
+@use '../util/mixins';
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  background-color: black;
+
+  @include mixins.sm {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  @include mixins.sm-md {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  @include mixins.md {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+
+
+
+  /////////////////////// GAME WIN SCREEN ///////////////////////////////
+  .background__win-image {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+  
+    .background__win-image-source {
+      position: absolute;
+      width: 100vw;
+      height: 100vh;
+      transform: scale(1.2); // Slight zoom effect without cropping
+      left: 0;
+      top: 0;
+    }
+  
+    @include mixins.lg {
+      .background__win-image-source {
+        transform: scale(1.5);
+        left: 10%;
+        top: 25%;
+        height: 50%;
+      }
+    }
+    @include mixins.md {
+      .background__win-image-source {
+        transform: scale(1.5);
+        left: 10%;
+        top: 25%;
+        height: 50%;
+      }
+    }
+  
+    @include mixins.sm-md {
+      .background__win-image-source {
+        transform: scale(1.5);
+        left: 10%;
+        top: 25%;
+        height: 50%;
+      }
+    }
+  
+    @include mixins.sm {
+      .background__win-image-source {
+        transform: scale(1.5);
+        left: 10%;
+        top: 25%;
+        height: 50%;
+      }
+    }
+  }
+  
+  .game__image-win {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    .game__image-win-victoryGIF {
+      max-width: 40%;
+      height: auto;
+      position: absolute;
+      top: 20%;
+  
+      @include mixins.lg {
+        max-width: 60%;
+        top: 25%;
+      }
+      @include mixins.md {
+        max-width: 80%;
+        top: 30%;
+      }
+  
+      @include mixins.sm-md {
+        max-width: 70%;
+        top: 30%;
+      }
+  
+      @include mixins.sm {
+        max-width: 60%;
+        top: 30%;
+      }
+
+      @include mixins.sm-h {
+        max-width: 70%;
+        position: absolute;
+        top: 0px;
+      }
+    }
+  }
+  
+  /// ///////////////////////////////////////////////////////////////////
+
+// ////////////////////////////// GAME OVER SIZE ////////////////////////
+
+.game__over-image {
+
+  @include mixins.sm-h {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+    top: -50px;
+  }
+
+}
+
+.background__lose-image {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+
+  .background__image {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    transform: scale(1.2); // Default slight zoom
+    left: 0;
+    top: 0;
+  }
+
+  @include mixins.lg {
+    .background__image {
+      transform: scale(1.5);
+      left: 10%;
+      top: 25%;
+      height: 50%;
+    }
+  }
+
+  @include mixins.md {
+    .background__image {
+      transform: scale(1.5);
+      left: 10%;
+      top: 25%;
+      height: 50%;
+    }
+  }
+
+  @include mixins.sm-md {
+    .background__image {
+      transform: scale(1.5);
+      left: 10%;
+      top: 25%;
+      height: 50%;
+    }
+  }
+
+  @include mixins.sm {
+    .background__image {
+      transform: scale(1.5);
+      left: 10%;
+      top: 25%;
+      height: 50%;
+    }
+  }
+}
+
+.game__image-lose {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .game__over-image {
+    max-width: 40%;
+    height: auto;
+    position: absolute;
+    top: 20%;
+
+    @include mixins.lg {
+      max-width: 60%;
+    }
+
+    @include mixins.md {
+      max-width: 80%;
+
+    }
+
+    @include mixins.sm-md {
+      max-width: 70%;
+      top: 27%;
+    }
+
+    @include mixins.sm {
+      max-width: 70%;
+      top: 30%;
+    }
+
+    @include mixins.sm-h {
+      max-width: 70%;
+      position: absolute;
+      top: 0px;
+    }
+  }
+}
+
+
+
+//////////////////////////////////////////////////////////////////////////
+
+  .background {
+    @include mixins.sm {
+      position: absolute;
+      width: 200vw;
+      top: 0;
+      left: 0;
+      overflow: hidden;
+    }
+  
+    @include mixins.sm-md {
+      position: absolute;
+      width: 200vw;
+      top: 0;
+      left: 0;
+      overflow: hidden;
+    }
+  
+    @include mixins.md {
+      position: absolute;
+      width: 200vw;
+      top: 0;
+      left: 0;
+      overflow: hidden;
+    }
+
+    @include mixins.lg {
+      position: absolute;
+      width: 200vw;
+      top: 0;
+      left: 0;
+      overflow: hidden;
+    }
+  }
+
+
+
+  .background__image{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    @include mixins.sm {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+    }
+  
+    @include mixins.sm-md {
+      position: relative;
+      width: default;
+      width: 100%;
+      height: 100vh;
+    }
+  
+    @include mixins.md {
+      position: relative;
+      width: default;
+      width: 100%;
+      height: 100vh;
+    }
+
+    @include mixins.lg {
+      position: relative;
+      width: default;
+      width: 100%;
+      height: 100vh;
+    }
+
+    @include mixins.sm-h {
+      width: 100vw;
+    }
+
+    
+
+
+  }
+
+
+
+
+
+  .game {
+    display: block;
+    height: 70vh;
+    width: 50%;
+    background-color: rgb(147, 147, 147);
+    border: 10px solid rgb(200, 200, 200);
+    border-style: ridge;
+    padding: 20px;
+    position: relative;
+    font-size: 18px;
+    font-size: clamp(0.938rem, 0.331vw + 0.86rem, 1.125rem);
+
+    @include mixins.sm {
+      width: 90%;
+    }
+
+    @include mixins.sm-md {
+      width: 82.5%;
+    }
+
+    @include mixins.md {
+      width: 75%;
+    }
+
+    @include mixins.lg {
+      width: 70%;
+    }
+
+    @include mixins.sm-h {
+      height: 80vh;
+    }
+
+
+    &__stats {
+      display: flex;
+      justify-content: space-around;      
+      background-color: rgb(246, 230, 56);
+      padding: 0 20px;
+      border: solid 1px black;
+      border-radius: 10px;
+      box-shadow: 0px 0px 2px black;
+      margin: 10px 0;
+    }
+
+    
+    &__controls {
+      display: flex;
+      justify-content: space-between;
+
+      
+      @include mixins.sm {
+        display: block!important;
+      }
+
+      @include mixins.sm-md {
+        display: block!important;
+      }
+      
+      @include mixins.md {
+        display: block!important;
+      }
+      
+      @include mixins.lg {
+        display: block!important;
+      }
+      
+      @include mixins.sm-h {
+        display: flex !important;
+        justify-content: center;
+      }
+    }
+
+    &__button {
+      border: none;
+      margin: 10px 5px;
+      border-radius: 30px;
+      padding: 2px 20px;
+      width: 100%;
+      font-size: 18px;
+      opacity: 1;
+      font-size: clamp(0.938rem, 0.331vw + 0.86rem, 1.125rem);
+
+      &:hover {
+        cursor: pointer;
+        opacity: .75;
+      }
+
+      @include mixins.sm-h {
+        width: auto;
+        font-size: clamp(0.75rem, 0.663vw + 0.595rem, 1.125rem);
+      }
+    }
+
+
+    &__equip-weapon {
+      // display: none;
+      // justify-content: center;
+      width: 50%;
+      border-radius: 30px;
+      border: none;
+      margin: 20px 20px;
+      font-size: clamp(0.938rem, 0.331vw + 0.86rem, 1.125rem);
+
+      &:hover {
+        cursor: pointer;
+        opacity: .75;
+      }
+
+      @include mixins.sm-h {
+        width: 20%;
+      }
+
+    }
+
+    &__equip {
+      display: none;
+      position: relative;
+      width: 100%;
+      border-radius: 30px;
+      border: none;
+      text-align: center;
+
+      // &:hover {
+      //   cursor: pointer;
+      //   opacity: .75;
+      // }
+
+    }
+
+
+    &__monster-stats{
+      display: none;
+      justify-content: space-between;
+      font-weight: bold;
+      color: white;
+    }
+
+    &__image {
+      position: relative;
+    }
+
+
+    &__background-image{
+      display: none;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      border-radius: 10px;
+      height: 30vh;
+
+      @include mixins.sm {
+        height: 15vh;
+      }
+
+      @include mixins.sm-md {
+        height: 15vh;
+      }
+
+      @include mixins.md {
+        height: 15vh;
+      }
+
+      @include mixins.lg {
+        height: 20vh;
+      }
+
+      @include mixins.sm-h {
+        width: 50vw;
+      }
+
+    }
+
+    &__win-image {
+      // display: block;
+      position: relative;
+      top: -200px;
+      width: 100%;
+      height: 100%;
+      z-index: 2;
+
+
+      @include mixins.sm {
+        top: -125px;
+      }
+
+      @include mixins.sm-md {
+        top: -125px;
+      }
+
+      @include mixins.sm-h {
+        top: -75px;
+      }
+    }
+
+
+    &__monster-image {
+      display: none;
+      margin: 10px 0;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 15vw;
+      height: 100%;
+      opacity: 1;
+      transition-duration: .25s;
+
+
+      @include mixins.sm {
+        width: 35vw;
+        height: 15vh;
+      }
+      @include mixins.sm-md {
+        width: 32vw;
+        height: 15vh;
+      }
+      @include mixins.md {
+        width: 25vw;
+        height: 15vh;
+      }
+      @include mixins.lg {
+        width: 25vw;
+        height: 20vh;
+      }
+      @include mixins.xl {
+        width: 20vw;
+      }
+
+      @include mixins.sm-h {
+        width: 10vw;
+      }
+      
+
+    }
+
+
+    &__text {
+      width: 90%;
+      position: absolute;
+      text-align: center;
+      // top: 40%;
+      margin: 30px 0;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: clamp(1.25rem, 1.105vw + 0.991rem, 1.875rem);
+
+      @include mixins.sm-h {
+        margin: 0px 0;
+        font-size: clamp(0.75rem, 0.663vw + 0.595rem, 1.125rem);
+      }
+
+
+    }
+
+
+    &__healthBar {
+      display: none;
+      margin: 10px 0;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      height: 15px;
+      background-color: #ddd; 
+
+      @include mixins.sm-h {
+        width: 80%;
+      }
+    }
+
+    &__healthBar-text{
+      margin: 6px 0;
+      color: #fff;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 1;
+      font-size: 18px;
+    }
+    
+    &__healthBar::-webkit-progress-value {
+      background-color: rgb(240, 55, 30); 
+      border-radius: 30px;
+      border: 2px solid #000000;
+    }
+
+
+    &__shopList{
+      display: none;
+      width: 100%;
+      font-size: clamp(1.25rem, 1.105vw + 0.991rem, 1.875rem);
+
+      @include mixins.sm-h {
+        font-size: clamp(0.75rem, 0.663vw + 0.595rem, 1.125rem);
+      }
+    }
+
+    &__equip-item{
+      width: 100%;
+      position: absolute;
+      bottom: 50px;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+      color: #fff;
+
+
+      @include mixins.sm-h {
+        font-size: clamp(0.5rem, 0.442vw + 0.396rem, 0.75rem);
+        bottom: 22.5px;
+      }
+    }
+
+
+    &__inventory{
+      width: 90%;
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+      color: #b8b8b8;
+
+      @include mixins.sm-h {
+        bottom: 3px;
+        font-size: clamp(0.5rem, 0.442vw + 0.396rem, 0.75rem);
+      }
+    }
+
+
+
+
+  }
+
+
+
+}
