@@ -94,7 +94,7 @@ equippedItem.innerText = `Equipped Item: ${weaponEquipped}`;
 
 const equipedWeaponFunc = () => {
   const weaponDamage = {
-    "Stick": [5, 500],
+    "Stick": [5, 10],
     "Dagger": [5, 14],
     "Sword": [5, 30],
     "Knife": [5, 18],
